@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparent Navbar</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">VRATECH...</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#left">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact-form">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="content">
+    <div id="left">
+        <h1 class="tit">Best <span class="dot">Website</span> and <span class="dot">SEO</span> Service in Kanyakumari<span class="dot">.</span></h1>
+    </div>
+</div>
+<div class="about" id="about">
+    <div class="lf-content">
+        <div class="fff">
+        <h2>What we are?</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In optio unde odit rerum aliquam. Fugiat obcaecati expedita in odio mollitia, voluptatibus repellendus inventore ipsa vero animi, eius neque, distinctio voluptas aliquam saepe similique officia dolorum. Magni eius expedita ex, debitis velit voluptates soluta aliquam repellendus. Enim assumenda vitae accusamus incidunt reprehenderit nostrum amet tempore ipsum non? Ratione earum pariatur iste possimus recusandae alias sequi reiciendis impedit mollitia, distinctio dolor saepe itaque voluptatem ad, atque vero, unde quas voluptatibus at. Sit temporibus quasi et est, aspernatur natus vel at, corrupti voluptates veritatis, cum voluptate? Quibusdam ab, aperiam similique doloribus laudantium est?
+        </p>
+    </div>
+    </div>
+    <div class="rt-im">
+        <img src="/images/what-we.jpg" alt="">
+    </div>
+</div>
+
+
+<section class="projects section" id="projects">
+    <h2 class="section__title-1">
+      <span>Our Services.</span>
+    </h2>
+  
+    <div class="projects__container container grid">
+      <article class="projects__card">
+        <div class="projects__image">
+          <img src="/images/web.jpg" alt="image" class="projects__img">
+  
+          
+        </div>
+  
+        <div class="projects__content">
+          <h3 class="projects__subtitle">Website</h3>
+          <h2 class="projects__title">Website Development</h2>
+  
+          <p class="projects__description">
+            Crafting engaging, responsive websites tailored to your vision and audience, marrying functionality with aesthetic appeal.
+          </p>
+        </div>
+  
+        
+      </article>
+  
+      <article class="projects__card">
+        <div class="projects__image">
+          <img src="/images/seo.jpg" alt="image" class="projects__img">
+  
+          
+        </div>
+  
+        <div class="projects__content">
+          <h3 class="projects__subtitle">SEO</h3>
+          <h2 class="projects__title">SEO Optimization</h2>
+  
+          <p class="projects__description">
+            Crafting SEO content requires strategic integration of relevant keywords and valuable information to enhance online visibility and drive organic traffic.
+          </p>
+        </div>
+  
+        
+      </article>
+  
+      <article class="projects__card">
+        <div class="projects__image">
+          <img src="/images/designer.jpg" alt="image" class="projects__img">
+  
+          
+        </div>
+  
+        <div class="projects__content">
+          <h3 class="projects__subtitle">Design</h3>
+          <h2 class="projects__title">Logo Design</h2>
+  
+          <p class="projects__description">
+            Design a captivating logo that visually communicates the essence of your brand in one striking image.
+          </p>
+        </div>
+  
+        
+      </article>
+    </div>
+  </section>
+
+
+  <section class="contact-section-new" id="contact-form">
+    <div class="container-new">
+      <h2 class="contact-heading">Contact Us</h2>
+      <p class="contact-description">Feel free to get in touch with us for any inquiries or questions.</p>
+      <form action="#" method="POST" onsubmit="return submitForm()">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>Contact us: veeravinorr@gmail.com | Phone: +91 6383921006</p>
+    <p>Vandavilai, Nagercoil, Kanyakumari</p>
+  </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+      $("#navbar").addClass("scrolled");
+    } else {
+      $("#navbar").removeClass("scrolled");
+    }
+  });
+});
+
+
+$(document).ready(function(){
+  // Add click event listener to each nav link
+  $('.navbar-nav .nav-link').on('click', function() {
+    // Remove active class from all nav links
+    $('.navbar-nav .nav-link').removeClass('active');
+    // Add active class to the clicked link
+    $(this).addClass('active');
+    // Change color of all nav links to default color
+    $('.navbar-nav .nav-link').css('color', 'rgb(255, 0, 0)');
+    // Change color of clicked link to white
+    $(this).css('color', 'rgba(247, 182, 182, 0.9)');
+  });
+});
+
+
+
+function submitForm() {
+  // Display a message when the form is submitted
+  alert("Your message has been sent!");
+  // Redirect to index.html after displaying the message
+  window.location.href = "index.html";
+  return false; // Prevent default form submission
+}
+
+</script>
+</body>
+</html>
